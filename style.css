@@ -1,0 +1,147 @@
+body {
+    background-color: #46495e;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: min(450px, 98%);
+    background: #6870a1;
+    border-radius: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+                rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.container h1 {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem 1.75rem;
+    border-bottom: 1px solid #858bb2;
+    color: #fff;
+}
+
+#copy {
+    font-family: Comfortaa, sans-serif;
+}
+
+#copy i{ 
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.wrapper {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.wrapper .input-box {
+    position: relative;
+}
+
+.input-box input {
+    width: 84%;
+    height: 53px;
+    color: #fff;
+    background: #858bb2;
+    font-size: 1.06rem;
+    font-weight: 500;
+    border-radius: 4px;
+    letter-spacing: 1.4px;
+    border: 1px solid #000;
+    padding: 0 2.9rem 0 1rem;
+}
+
+.input-box span {
+    position: absolute;
+    right: 13px;
+    cursor: pointer;
+    line-height: 53px;
+    color: #000;
+}
+
+.input-box span:hover {
+    color: #46495e !important;
+}
+
+.wrapper .generate-btn {
+    width: 100%;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #46496e;
+    font-size: 1.06rem;
+    padding: 1rem 0;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: Comfortaa, sans-serif;
+}
+
+.wrapper .generate-btn:hover {
+    background: #46495e;
+}
+
+#showpassword {
+    background-color: #858bb2;
+    padding: 12px;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+#showpassword input {
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    color: white;
+    font-family: comfortaa;
+}
+
+p {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    display: none;
+    font-family: comfortaa;
+}
+
+@media (max-width:427px) {
+    .input-box input{
+        width: 82.5%;
+    }
+
+    .container h1{
+        font-size:1.65rem ;
+    }
+
+    .wrapper .generate-btn{
+        font-size: 1.01rem;
+    }
+    
+    .input-box input{
+        height: 50px;
+    }
+}
+
+@media (max-width:380px) {
+    .input-box input{
+        width: 80%;
+    }
+    
+}
+@media (max-width:322px) {
+    .input-box input{
+        width: 75.7%;
+    }
+    
+}
